@@ -30,7 +30,7 @@ export default {
           {
             id:2,
             title:"todo 2",
-            completed:true
+            completed:false
           },
           {
             id:3,
@@ -45,7 +45,7 @@ export default {
         this.todos=this.todos.filter(todo => todo.id !==id);
       },
       addTodo(newTodo){
-        this.todos=[...this.todos, newTodo];
+        this.todos.push(newTodo);
       }
     }
     
